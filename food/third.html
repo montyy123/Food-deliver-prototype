@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>FoodieHub - Meal Plans</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #E91E63;
+      --secondary-color: #FCE4EC;
+      --accent-color: #FF80AB;
+      --text-primary: #1F2937;
+      --text-secondary: #6B7280;
+      --background-color: #FFF8FA;
+    }
+  </style>
+<style>
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+    .playfair-display {
+        font-family: 'Playfair Display', serif;
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root">
+<div class="flex flex-col">
+<header class="flex items-center p-4 bg-white shadow-sm">
+<a href="second.html" class="text-gray-700 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-100">
+<span class="material-symbols-outlined"> arrow_back_ios_new </span>
+</a>
+<h1 class="text-[var(--text-primary)] text-xl font-semibold flex-1 text-center pr-10">Meal Plans</h1>
+</header>
+<main class="flex-1 overflow-y-auto px-5 pt-8 pb-32">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-[var(--text-primary)] mb-2 playfair-display">Choose Your Plan</h2>
+<p class="text-gray-500 mb-8">Select a plan that fits your lifestyle.</p>
+<div class="space-y-5">
+<div class="flex items-start justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:shadow-lg">
+<div class="flex-1">
+<h3 class="text-lg font-semibold text-[var(--text-primary)]">Daily Delight</h3>
+<p class="text-sm text-[var(--text-secondary)] mt-1 mb-2">A fresh, delicious meal delivered to your door every day.</p>
+<p class="text-xl font-bold text-[var(--primary-color)] playfair-display">$15<span class="text-sm font-medium text-gray-500">/day</span></p>
+</div>
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-pink-50 ml-4">
+<span class="material-symbols-outlined text-3xl text-pink-400"> local_dining </span>
+</div>
+</div>
+<div class="flex items-start justify-between rounded-2xl border-2 border-[var(--primary-color)] bg-white p-5 shadow-lg ring-4 ring-red-100/50">
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-[var(--primary-color)]">Weekly Wellness</h3>
+<span class="text-xs font-semibold bg-red-100 text-[var(--primary-color)] py-1 px-3 rounded-full">POPULAR</span>
+</div>
+<p class="text-sm text-[var(--text-secondary)] mt-1 mb-2">Enjoy a full week of healthy, pre-planned meals. Save time and eat well.</p>
+<p class="text-xl font-bold text-[var(--primary-color)] playfair-display">$90<span class="text-sm font-medium text-gray-500">/week</span></p>
+</div>
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 ml-4">
+<span class="material-symbols-outlined text-3xl text-[var(--primary-color)]"> calendar_view_week </span>
+</div>
+</div>
+<div class="flex items-start justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:shadow-lg">
+<div class="flex-1">
+<h3 class="text-lg font-semibold text-[var(--text-primary)]">Monthly Marvel</h3>
+<p class="text-sm text-[var(--text-secondary)] mt-1 mb-2">The ultimate convenience with a full month of curated meals.</p>
+<p class="text-xl font-bold text-[var(--primary-color)] playfair-display">$350<span class="text-sm font-medium text-gray-500">/month</span></p>
+</div>
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-pink-50 ml-4">
+<span class="material-symbols-outlined text-3xl text-pink-400"> calendar_month </span>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="fixed bottom-0 left-0 right-0 border-t border-gray-200 bg-white/80 backdrop-blur-sm px-6 py-4">
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-full h-16 bg-gradient-to-r from-red-500 to-pink-500 text-white text-lg font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transition-shadow duration-300 mb-16">
+<span class="truncate">Subscribe to Weekly Plan</span>
+<span class="material-symbols-outlined"> arrow_forward </span>
+</button>
+<nav class="fixed bottom-0 left-0 right-0 border-t border-gray-200 bg-white/90 backdrop-blur-md">
+<div class="flex justify-around py-2">
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 w-full" href="second.html">
+<span class="material-symbols-outlined text-2xl"> home </span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-red-600 w-full" href="third.html">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;"> receipt_long </span>
+<p class="text-xs font-medium">Plans</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 w-full" href="Fourth.html">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;"> person </span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</div>
+</nav>
+</footer>
+</div>
+
+</body></html>

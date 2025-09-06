@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>FoodieHub - Create Account</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #E91E63;
+        --secondary-color: #FCE4EC;
+        --accent-color: #FF80AB;
+        --text-primary: #1F2937;
+        --text-secondary: #6B7280;
+        --background-color: #FFF8FA;
+      }
+    </style>
+<style>
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden bg-[var(--background-color)]" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(158,157,71)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');">
+<div class="flex flex-1 flex-col justify-between">
+<div class="flex flex-col">
+<header class="p-6">
+<a href="second.html" class="flex size-10 items-center justify-center rounded-full text-[var(--text-primary)]">
+<span class="material-symbols-outlined"> arrow_back_ios_new </span>
+</a>
+</header>
+<main class="px-6 pb-8 pt-4">
+<div class="mb-10 text-center">
+<h1 class="font-serif text-4xl font-bold text-[var(--text-primary)]" style="font-family: 'Playfair Display', serif;">Create Account</h1>
+<p class="mt-2 text-base text-[var(--text-secondary)]">Join us and start your culinary journey.</p>
+</div>
+<div class="space-y-6">
+<div class="relative">
+<input class="peer h-16 w-full rounded-xl border-2 border-gray-200 bg-white px-4 text-base text-[var(--text-primary)] placeholder-transparent transition-colors focus:border-[var(--primary-color)] focus:outline-none" id="full-name" placeholder="Full Name"/>
+<label class="absolute left-4 top-0 -translate-y-2.5 bg-white px-1 text-sm text-[var(--text-secondary)] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:-translate-y-2.5 peer-focus:text-sm peer-focus:text-[var(--primary-color)]" for="full-name">
+                Full Name
+              </label>
+</div>
+<div class="relative">
+<input class="peer h-16 w-full rounded-xl border-2 border-gray-200 bg-white px-4 text-base text-[var(--text-primary)] placeholder-transparent transition-colors focus:border-[var(--primary-color)] focus:outline-none" id="email" placeholder="Email" type="email"/>
+<label class="absolute left-4 top-0 -translate-y-2.5 bg-white px-1 text-sm text-[var(--text-secondary)] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:-translate-y-2.5 peer-focus:text-sm peer-focus:text-[var(--primary-color)]" for="email">
+                Email Address
+              </label>
+</div>
+<div class="relative">
+<input class="peer h-16 w-full rounded-xl border-2 border-gray-200 bg-white px-4 text-base text-[var(--text-primary)] placeholder-transparent transition-colors focus:border-[var(--primary-color)] focus:outline-none" id="password" placeholder="Password" type="password"/>
+<label class="absolute left-4 top-0 -translate-y-2.5 bg-white px-1 text-sm text-[var(--text-secondary)] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:-translate-y-2.5 peer-focus:text-sm peer-focus:text-[var(--primary-color)]" for="password">
+                Password
+              </label>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined"> visibility_off </span>
+</button>
+</div>
+</div>
+</main>
+</div>
+<div class="bg-[var(--background-color)] p-6">
+<div class="space-y-4">
+<button class="flex h-14 w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[var(--primary-color)] px-5 text-lg font-semibold leading-normal tracking-[0.015em] text-white shadow-[0_4px_14px_rgba(233,30,99,0.25)] transition-all hover:bg-opacity-90 active:scale-95">
+<span class="truncate">Sign Up</span>
+</button>
+<p class="text-center text-sm text-[var(--text-secondary)]">
+            Already have an account?
+            <a class="font-semibold text-[var(--primary-color)]" href="second.html">Log In</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="sticky bottom-0 z-10 border-t border-gray-200 bg-white">
+<div class="mx-auto flex max-w-md items-center justify-around px-4 py-2">
+<a class="flex flex-col items-center gap-1 text-red-600" href="second.html">
+<span class="material-symbols-outlined"> home </span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500" href="third.html">
+<span class="material-symbols-outlined"> receipt_long </span>
+<p class="text-xs">Plans</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500" href="Fourth.html">
+<span class="material-symbols-outlined"> person </span>
+<p class="text-xs">Profile</p>
+</a>
+</div>
+</nav>
+</body></html>

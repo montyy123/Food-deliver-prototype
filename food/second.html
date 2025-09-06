@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>FoodieHub - Browse Kitchens</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #E91E63;
+        --secondary-color: #FCE4EC;
+        --accent-color: #FF80AB;
+        --text-primary: #1F2937;
+        --text-secondary: #6B7280;
+        --background-color: #FFF8FA;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  </head>
+<body class="bg-pink-50">
+<div class="relative flex size-full min-h-screen flex-col bg-white" style='font-family: "Manrope", "Noto Sans", sans-serif;'>
+<header class="sticky top-0 z-10 bg-white/90 backdrop-blur-md">
+<div class="flex items-center p-4 pb-2 justify-between">
+<h1 class="text-gray-900 text-2xl font-bold leading-tight tracking-tighter flex-1 text-center pl-10 text-red-700">Browse Kitchens</h1>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center rounded-full h-10 bg-transparent text-gray-800 gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-3xl text-red-600"> shopping_bag </span>
+</button>
+</div>
+</div>
+<div class="px-4 py-3">
+<div class="relative">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-full h-full bg-pink-50 border border-pink-100">
+<div class="text-gray-500 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-2xl text-red-400"> search </span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-gray-900 focus:outline-0 focus:ring-2 focus:ring-red-300 border-none bg-transparent h-full placeholder:text-gray-500 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search for kitchens or dishes" value=""/>
+</div>
+</label>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center h-9 w-9 rounded-full bg-red-600 text-white">
+<span class="material-symbols-outlined text-2xl"> tune </span>
+</button>
+</div>
+</div>
+<div class="flex gap-3 px-4 pb-4 overflow-x-auto">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-red-100 px-4">
+<p class="text-red-800 text-sm font-semibold leading-normal">Cuisine</p>
+<span class="material-symbols-outlined text-xl text-red-600"> expand_more </span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-red-100 px-4">
+<p class="text-red-800 text-sm font-semibold leading-normal">Dietary</p>
+<span class="material-symbols-outlined text-xl text-red-600"> expand_more </span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-red-100 px-4">
+<p class="text-red-800 text-sm font-semibold leading-normal">Rating</p>
+<span class="material-symbols-outlined text-xl text-red-600"> expand_more </span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-pink-500 text-white px-4">
+<p class="text-sm font-semibold leading-normal">Offers</p>
+<span class="material-symbols-outlined text-xl"> local_offer </span>
+</button>
+</div>
+</header>
+<main class="flex-1 bg-pink-50">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight tracking-tight px-4 pb-3 pt-5">Featured Kitchens</h2>
+<div class="p-4 space-y-6">
+<div class="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHjcFC-pJ0uH9dBbBBa9rQsIuyitbCIrITGKIKSzqI1VxGPgBGHjabNlmAT77n4uKxls3ge8jjDewWLReI7YsyBstkg4hu8KoS5BRCqT8WBST6P_4yt--tpcWJ8N15Dtv2z4xgpf1AY2tZxkfafA7SJYbdcj0ZgcQbwipbBcKfzIEdWv4ajKVN7jlDeDt_QRGmzdvkNKp10JvLm8ypK62XxTMRDO6TYmFRPA8eJMFIaSseA_tCmG2wT1dfN_JJ7SYcohkvpkWyOcY");' aria-label="Spice Haven restaurant interior"></div>
+<div class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">10% OFF</div>
+</div>
+<div class="p-4 pt-2">
+<div class="flex items-center justify-between mb-2">
+<p class="text-gray-900 text-xl font-bold leading-tight">Spice Haven</p>
+<div class="flex items-center gap-1 text-pink-500">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-gray-800 text-sm font-bold leading-normal">4.5</p>
+</div>
+</div>
+<p class="text-gray-600 text-sm font-normal leading-normal mb-3">Authentic Indian cuisine with a modern twist. Try our Butter Chicken and Palak Paneer.</p>
+<div class="flex gap-2">
+<span class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-800">Veg</span>
+<span class="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-800">Non-Veg</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeBf9m_YMuQicmjiIBTvHab1RNkn0kQU8mY85vY6uUC4tQoCnKZ7FlymvMFymbC713FreznrzCjXW0cjFXJm0wqd8ip_5Z79CTY-D9HNuPbFogtrcQQQwrRQ460Gs51KJrnfOePyWMsAFN3rFnbanjK8CF8VsHfRjWF5HtrBOfgVwlU10Wuf6B0DY9nnF5XIp8hpkYhrHDThY0oRN4xilZt90XG5s0krKgLT5MNEvQaloHDuYhOLLnVV9hUmbfAjBuVvx345AbbcM");' aria-label="Green Leaf Kitchen fresh vegetables and dishes"></div>
+<div class="p-4 pt-2">
+<div class="flex items-center justify-between mb-2">
+<p class="text-gray-900 text-xl font-bold leading-tight">Green Leaf Kitchen</p>
+<div class="flex items-center gap-1 text-pink-500">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-gray-800 text-sm font-bold leading-normal">4.2</p>
+</div>
+</div>
+<p class="text-gray-600 text-sm font-normal leading-normal mb-3">Fresh, organic vegetarian and vegan options. Don't miss our Quinoa Salad and Vegan Lasagna.</p>
+<div class="flex gap-2">
+<span class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-800">Veg</span>
+<span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800">Vegan</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl overflow-hidden shadow-lg bg-white border border-gray-100">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPBSUBjB4BdRGCWhzdxsj4O7xnnIGWZWf9u9c1JWb-rw23pVhpiVYxj35ZizdwU4YDAIibMunCVMFr0s3vNehHGgJhhC2FkF7Iz4bbjuIeMru4X6CPDie_sGBCE-xQGxxfCfUSdD1Hd-Adplzlf7vk90w8diDUl5WhxD305HY4onw_jWetGAQ30Ptoo-RKtIjIhs9EuVYgZucB841mI5ih8gywWFgFLxI-X1V7iw4mAwq4Xa4BFcu8veAiUcjbJcrWAnviUK4Pr5E");' aria-label="Taste of Italy pasta and Italian dishes"></div>
+<div class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">FREE DELIVERY</div>
+</div>
+<div class="p-4 pt-2">
+<div class="flex items-center justify-between mb-2">
+<p class="text-gray-900 text-xl font-bold leading-tight">Taste of Italy</p>
+<div class="flex items-center gap-1 text-pink-500">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="text-gray-800 text-sm font-bold leading-normal">4.8</p>
+</div>
+</div>
+<p class="text-gray-600 text-sm font-normal leading-normal mb-3">Classic Italian dishes made with love. Our Pasta Carbonara and Tiramisu are customer favorites.</p>
+<div class="flex gap-2">
+<span class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-800">Veg</span>
+<span class="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-800">Non-Veg</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-white/90 backdrop-blur-md border-t border-gray-100">
+<div class="flex justify-around py-2">
+<a class="flex flex-col items-center justify-center gap-1 text-red-600 w-full" href="second.html">
+<span class="material-symbols-outlined text-2xl"> home </span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 w-full" href="third.html">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;"> receipt_long </span>
+<p class="text-xs font-medium">Plans</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 w-full" href="Fourth.html">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 0;"> person </span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>
